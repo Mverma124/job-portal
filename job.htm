@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Job Portal</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #a54c4c;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+</style>
+</head>
+<body>
+<div class="contact-container">
+  <h1>Contact Us</h1>
+  <p>If you have any questions, please do not hesitate to send us a message.</p>
+  <form id="contact-form">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+    <textarea id="message" name="message" placeholder="Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="additional-contact">
+    <p>Or reach out to us through our social media:</p>
+    <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+  </div>
+</div>
+</body>
+</html>
